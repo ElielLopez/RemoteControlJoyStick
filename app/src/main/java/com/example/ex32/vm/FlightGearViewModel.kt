@@ -15,6 +15,6 @@ class FlightGearViewModel: ViewModel() {
     //val popularity: LiveData<Popularity> = Transformations.map(connected)
 
     fun connectFG(){
-        
+
     }
 }
