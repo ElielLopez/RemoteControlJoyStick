@@ -14,26 +14,43 @@
         android:layout_height="match_parent"
         tools:context=".view.MainActivity">
 
-        <TextView
-            android:id="@+id/ipText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{viewmodel.ipAddress}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <Button
-            android:layout_width="339dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Connect"
+        <EditText
+            android:id="@+id/IpText"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:hint="@string/ip_hint"
+            android:text="@={viewmodel._ipAddress}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="223dp"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <EditText
+            android:id="@+id/PortText"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="@string/port_hint"
+            android:text="@={viewmodel._portNumber}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IpText" />
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/connect_button"
+            android:textAllCaps="false"
+            app:backgroundTint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PortText"
+            android:onClick="@{() -> viewmodel.connectFG()}"/>
+<!--        android:onClick="@{() -> viewmodel.connectFG()}"-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
