@@ -9,64 +9,91 @@
             type="com.example.ex32.vm.FlightGearViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".view.MainActivity">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/IpText"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="32dp"
-            android:gravity="center"
-            android:hint="@string/ip_hint"
-            android:text="@={viewmodel._ipAddress}"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:visibility="visible"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.MainActivity">
 
-        <EditText
-            android:id="@+id/PortText"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:hint="@string/port_hint"
-            android:text="@={viewmodel._portNumber}"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/IpText"
-            android:visibility="visible"/>
+            <!--        android:onClick="@{() -> viewmodel.connectFG()}"-->
 
-        <Button
-            android:id="@+id/connectButton"
-            android:layout_width="200dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="@string/connect_button"
-            android:textAllCaps="false"
-            app:backgroundTint="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PortText"
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:text="@string/Title"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="66dp" />
 
-            android:visibility="visible"/>
-<!--        android:onClick="@{() -> viewmodel.connectFG()}"-->
+            <EditText
+                android:id="@+id/IpText"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="160dp"
+                android:gravity="center"
+                android:hint="@string/ip_hint"
+                android:text="@={viewmodel._ipAddress}"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/settingButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/settingsButtonText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints,OnClick"
-            tools:layout_editor_absoluteY="255dp"
-            android:onClick="showSettings"/>
+            <EditText
+                android:id="@+id/PortText"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:hint="@string/port_hint"
+                android:padding="10dp"
+                android:text="@={viewmodel._portNumber}"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IpText" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="200dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/connect_button"
+                android:textAllCaps="false"
+                android:visibility="visible"
+                app:backgroundTint="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PortText" />
+
+            <Button
+                android:id="@+id/settingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="showSettings"
+                android:text="@string/settingsButtonText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connectButton"
+                app:layout_constraintVertical_bias="0.084"
+                tools:ignore="MissingConstraints,OnClick" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 </layout>

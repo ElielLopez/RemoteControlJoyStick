@@ -6,46 +6,68 @@
     <data>
     </data>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
 
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:text="@string/Title"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="66dp" />
+
             <SeekBar
                 android:id="@+id/rudderBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="24dp"
                 android:max="100"
                 android:min="-100"
                 android:padding="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="parent" />
+                app:layout_constraintStart_toEndOf="parent"
+                tools:ignore="MissingConstraints"/>
 
             <SeekBar
                 android:id="@+id/throttleBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="216dp"
+                android:layout_width="500dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="330dp"
+                android:layout_marginBottom="270dp"
                 android:max="100"
                 android:min="0"
-                android:padding="30dp"
                 android:rotation="270"
-                app:layout_constraintBottom_toTopOf="@+id/rudderBar"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:layout_constraintRight_toLeftOf="@+id/rudderBar"/>
+                app:layout_constraintHorizontal_bias="0.5"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </LinearLayout>
 </layout>
