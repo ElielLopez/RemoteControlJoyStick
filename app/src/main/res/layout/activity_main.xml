@@ -24,7 +24,8 @@
             android:text="@={viewmodel._ipAddress}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"/>
 
         <EditText
             android:id="@+id/PortText"
@@ -36,7 +37,8 @@
             android:text="@={viewmodel._portNumber}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/IpText" />
+            app:layout_constraintTop_toBottomOf="@+id/IpText"
+            android:visibility="visible"/>
 
         <Button
             android:id="@+id/connectButton"
@@ -50,7 +52,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/PortText"
-            android:onClick="@{() -> viewmodel.connectFG()}"/>
+
+            android:visibility="visible"/>
 <!--        android:onClick="@{() -> viewmodel.connectFG()}"-->
+
+        <Button
+            android:id="@+id/settingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/settingsButtonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,OnClick"
+            tools:layout_editor_absoluteY="255dp"
+            android:onClick="showSettings"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

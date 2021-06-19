@@ -16,7 +16,6 @@ class FlightGearViewModel: ViewModel(), Observable {
     val portNumber: LiveData<String> = _portNumber
 
     override fun addOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {}
-
     override fun removeOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {}
 
     fun connectFG(){
@@ -30,7 +29,8 @@ class FlightGearViewModel: ViewModel(), Observable {
 //            println("inside view model if condition")
 //        }
 
-        //TODO try and catch
+        //TODO try and catch and check for valid values
+
         FlightGearModel.connect(ipAddress.value.toString(), (portNumber.value.toString()).toInt())
     }
 }
