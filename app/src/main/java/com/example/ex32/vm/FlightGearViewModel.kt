@@ -41,6 +41,14 @@ class FlightGearViewModel: ViewModel(), Observable {
         FlightGearModel.throttleChanged(throttle)
     }
 
+    fun setElevator(elevator: Float){
+        FlightGearModel.elevatorChanged(elevator)
+    }
+
+    fun setAileron(aileron: Float){
+        FlightGearModel.aileronChanged(aileron)
+    }
+
 //    fun showConnectionMessage(status: String){
 //        statusText = status
 //    }

@@ -41,4 +41,18 @@ object FlightGearModel {
             out.flush()
         })
     }
+
+    fun elevatorChanged(elevator: Float){
+        dispatchQueue.put(Runnable {
+            out.print("set /controls/flight/elevator $elevator \r\n")
+            out.flush()
+        })
+    }
+
+    fun aileronChanged(aileron: Float){
+        dispatchQueue.put(Runnable {
+            out.print("set /controls/flight/aileron $aileron \r\n")
+            out.flush()
+        })
+    }
 }
