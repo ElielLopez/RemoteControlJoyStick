@@ -50,12 +50,16 @@ class MainActivity : AppCompatActivity() {
             connectButtonView = findViewById(R.id.connectButton)
             connectButtonView?.visibility = View.INVISIBLE
 
-//            var intent = Intent(this, JoystickActivity::class.java)
-//            startActivity(intent)
+            openJoystickActivity()
         }
 
 //        var intent = Intent(this, JoystickActivity::class.java)
 //        startActivity(intent)
+    }
+
+    fun openJoystickActivity(){
+        var intent = Intent(this, JoystickActivity::class.java)
+        startActivity(intent)
     }
 
     fun showSettings(view: View){
