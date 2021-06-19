@@ -33,4 +33,14 @@ class FlightGearViewModel: ViewModel(), Observable {
 
         FlightGearModel.connect(ipAddress.value.toString(), (portNumber.value.toString()).toInt())
     }
+
+    fun setRudder(rudder: Float){
+        println("VM rudder is: $rudder")
+        FlightGearModel.rudderChanged(rudder)
+    }
+
+    fun setThrottle(throttle: Float){
+        println("VM throttle is: $throttle")
+        FlightGearModel.rudderChanged(throttle)
+    }
 }

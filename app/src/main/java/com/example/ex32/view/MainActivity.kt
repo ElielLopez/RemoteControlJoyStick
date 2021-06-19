@@ -36,11 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         var connectButton = findViewById<Button>(R.id.connectButton)
         connectButton.setOnClickListener{
-            //when the button is clicked, connect to flightGear and start the joystick activity
 //            if(viewModel.connectFG()){
-//                //var intent = Intent(this, JoystickActivity::class.java)
-//                //startActivity(intent)
-//                println("Test")
 //            }
             viewModel.connectFG()
             IPTextView = findViewById(R.id.IpText)
@@ -52,9 +48,6 @@ class MainActivity : AppCompatActivity() {
 
             openJoystickActivity()
         }
-
-//        var intent = Intent(this, JoystickActivity::class.java)
-//        startActivity(intent)
     }
 
     fun openJoystickActivity(){

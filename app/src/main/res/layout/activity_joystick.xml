@@ -4,34 +4,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="331dp">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/testText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="TEST"
-                android:textSize="50dp"
-
-                tools:layout_editor_absoluteY="28dp" />
 
             <SeekBar
+                android:id="@+id/rudderBar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="100dp"
-                app:layout_constraintBottom_toTopOf="@+id/testText"/>
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:max="100"
+                android:min="-100"
+                android:padding="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="parent" />
 
-
+            <SeekBar
+                android:id="@+id/throttleBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="216dp"
+                android:max="100"
+                android:min="0"
+                android:padding="30dp"
+                android:rotation="270"
+                app:layout_constraintBottom_toTopOf="@+id/rudderBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintRight_toLeftOf="@+id/rudderBar"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

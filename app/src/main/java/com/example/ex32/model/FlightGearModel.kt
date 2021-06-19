@@ -6,4 +6,12 @@ object FlightGearModel {
         println("inside model! IP is : $ip")
         println("inside model! port number is : $port")
     }
+
+    fun rudderChanged(rudder: Float){
+        println("Model Rudder is: $rudder")
+    }
+
+    fun throttleChanged(throttle: Float) {
+        println("Model throttle is: $throttle")
+    }
 }
