@@ -17,7 +17,6 @@ class JoystickActivity: AppCompatActivity() {
     var rudderBarView: SeekBar? = null
     var throttleBarView: SeekBar? = null
 
-    //@SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_joystick)
@@ -26,7 +25,6 @@ class JoystickActivity: AppCompatActivity() {
             .get(FlightGearViewModel::class.java)
 
         rudderBarView = findViewById(R.id.rudderBar)
-
         rudderBarView?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int,
                                            fromUser: Boolean) {
@@ -44,7 +42,6 @@ class JoystickActivity: AppCompatActivity() {
         })
 
         throttleBarView = findViewById(R.id.throttleBar)
-
         throttleBarView?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int,
                                            fromUser: Boolean) {

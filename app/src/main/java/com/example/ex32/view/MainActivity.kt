@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.ex32.R
 import com.example.ex32.databinding.ActivityMainBinding
@@ -22,8 +23,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dataBinding: ActivityMainBinding
     private lateinit var viewModel: FlightGearViewModel
 
-    //TODO unmark this line if needed
-    //@SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -36,8 +35,12 @@ class MainActivity : AppCompatActivity() {
 
         var connectButton = findViewById<Button>(R.id.connectButton)
         connectButton.setOnClickListener{
-//            if(viewModel.connectFG()){
-//            }
+            if(viewModel.connectFG()){
+                Toast.makeText(applicationContext, "Connected!", Toast.LENGTH_SHORT).show()
+            } else if(!viewModel.connectFG()) {
+                Toast.makeText(applicationContext, "Failed to connect!", Toast.LENGTH_SHORT).show()
+            }
+
             viewModel.connectFG()
             IPTextView = findViewById(R.id.IpText)
             IPTextView?.visibility = View.INVISIBLE
