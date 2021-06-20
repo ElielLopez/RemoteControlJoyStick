@@ -80,6 +80,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/PortText" />
 
             <Button
+                android:id="@+id/disconnectButton"
+                android:layout_width="200dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="112dp"
+                android:gravity="center"
+                android:text="@string/disconnect_button"
+                android:textAllCaps="false"
+                android:visibility="visible"
+                app:backgroundTint="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PortText"
+                android:onClick="@{() -> viewmodel.disconnectFG()}"/>
+
+            <Button
                 android:id="@+id/settingButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,7 +105,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/connectButton"
-                app:layout_constraintVertical_bias="0.084"
+                app:layout_constraintVertical_bias="0.439"
                 tools:ignore="MissingConstraints,OnClick" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

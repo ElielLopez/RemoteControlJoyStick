@@ -10,14 +10,15 @@ import java.util.concurrent.LinkedBlockingDeque
 object FlightGearModel {
 
     //private lateinit var viewModel: FlightGearViewModel
+    private lateinit var fgSocket: Socket
 
     private lateinit var out: PrintWriter
     var dispatchQueue: BlockingDeque<Runnable> = LinkedBlockingDeque<Runnable>()
 
     fun connect(ip: String, port: Int) {
         Thread(Runnable {
-            val fg = Socket(ip, port)
-            out = PrintWriter(fg.getOutputStream(),true)
+            val fgSocket = Socket(ip, port)
+            out = PrintWriter(fgSocket.getOutputStream(),true)
             while(true) {
                 try {
                     dispatchQueue.take().run()
@@ -25,6 +26,11 @@ object FlightGearModel {
                 } catch (e: InterruptedException) { }
             }
         }).start()
+    }
+
+    fun disconnect(){
+        fgSocket.close()
+        out.close()
     }
 
     fun rudderChanged(rudder: Float){

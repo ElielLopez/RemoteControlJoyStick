@@ -49,6 +49,10 @@ class FlightGearViewModel: ViewModel(), Observable {
         FlightGearModel.aileronChanged(aileron)
     }
 
+    fun disconnectFG() {
+        FlightGearModel.disconnect()
+    }
+
 //    fun showConnectionMessage(status: String){
 //        statusText = status
 //    }
