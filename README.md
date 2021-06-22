@@ -29,22 +29,22 @@ ______________
 
 ______________
 #### How to fly?
-Throttle, is the means by which the pilot controls the amount of fuel provided to the engine.
-Rudder is attached to the fin, which allows the pilot to control yaw about the vertical axis.
-Elevator controls the aircraft's pitch, and therefore the lift of the wing.
-Aileron used to control the aircraft in roll and located on the edge of each wing.
+Throttle, is the means by which the pilot controls the amount of fuel provided to the engine. <br/>
+Rudder is attached to the fin, which allows the pilot to control yaw about the vertical axis. <br/>
+Elevator controls the aircraft's pitch, and therefore the lift of the wing. <br/>
+Aileron used to control the aircraft in roll and located on the edge of each wing. <br/>
 
-You must learn to combine the 4 components to balance your aircraft.
-Using the _Throttle_ seek bar, you can gain speed by dragging the bar to the top (maximun value is 1 which is full power)
-or lower it to the bottom to stop the airecraft (minimum value is 0)
-_Rudder_ seek bar changing the direction by dragging the bar to the sides (-1 to +1)
-The joystick will change the _Elevator_ and _Aileron_ values at the same time, therefore you need to be gentle in order to keep the aircraft balanced.
+You must learn to combine the 4 components to balance your aircraft. <br/>
+Using the _Throttle_ seek bar, you can gain speed by dragging the bar to the top (maximun value is 1 which is full power) 
+or lower it to the bottom to stop the airecraft (minimum value is 0).
+_Rudder_ seek bar changing the direction by dragging the bar to the sides (-1 to +1). <br/>
+The joystick will change the _Elevator_ and _Aileron_ values at the same time, therefore you need to be gentle in order to keep the aircraft balanced. <br/>
 ______________
 #### Architecture
-##### The project is built according to the MVVM architectur.
-Model: FlightGearModel.
-View-Model: FlightGearViewModel.
-View: MainActivity, ManualActivity and JoystickView.
+##### The project is built according to the MVVM architectur. 
+Model: FlightGearModel. <br/>
+View-Model: FlightGearViewModel. <br/>
+View: MainActivity, ManualActivity and JoystickView. <br/>
 
 --------------
 #### UML Diagram
