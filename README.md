@@ -29,7 +29,7 @@ ______________
 
 ______________
 #### How to fly?
-**Throttle**, is the means by which the pilot controls the amount of fuel provided to the engine. <br/>
+**Throttle** is the means by which the pilot controls the amount of fuel provided to the engine. <br/>
 **Rudder** is attached to the fin, which allows the pilot to control yaw about the vertical axis. <br/>
 **Elevator** controls the aircraft's pitch, and therefore the lift of the wing. <br/>
 **Aileron** used to control the aircraft in roll and located on the edge of each wing. <br/>
