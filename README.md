@@ -4,7 +4,7 @@
 
 Remote control application to control Flight Gear aircrafts.
 
-------------
+--------------
 #### Settings
 1. open Flight Gear simulator
 2. Enter 'Settings'
@@ -20,15 +20,16 @@ Remote control application to control Flight Gear aircrafts.
 6. Insert port number 6400
 7. Click Connect
 8. Fly!
------------
+
+--------------
 
 #### How to use 
 
-==================
+--------------
 
 #### Architecture
 The project implementing MVVM architecture.
 
-==================
+--------------
 
 #### UML Diagram
