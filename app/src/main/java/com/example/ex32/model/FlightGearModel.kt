@@ -30,6 +30,8 @@ object FlightGearModel {
         }).start()
     }
 
+    // disconnect button will close the application.
+    // if the user wants to change password he needs to press 'settings' and then insert a new IP.
     fun disconnect(){
         fgSocket.close()
         out.close()

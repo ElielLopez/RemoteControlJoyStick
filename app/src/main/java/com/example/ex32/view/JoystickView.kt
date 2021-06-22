@@ -29,19 +29,19 @@ class JoystickView @JvmOverloads constructor(
 
     private val externalCircle = Paint().apply {
         style = Paint.Style.FILL_AND_STROKE //.STROKE
-        color = Color.BLACK // Color.parseColor('#FFC107')
+        color = Color.parseColor("#ebebeb")
         isAntiAlias = true
     }
     private val internalCircle = Paint().apply {
         style = Paint.Style.FILL_AND_STROKE //.STROKE
-        color = Color.TRANSPARENT // Color.parseColor('#FFC107')
+        color = Color.parseColor("#C2C2C2")
         isAntiAlias = true
     }
 
     override fun onSizeChanged(width: Int, height: Int, oldw: Int, oldh: Int){
         radiusExternalCircle = 0.3f* min(width,height).toFloat()
         centerExternalCircle = PointF(width/2.0f, height/2.0f)
-        radiusInternalCircle = 0.1f* min(width,height).toFloat()
+        radiusInternalCircle = 0.125f* min(width,height).toFloat()
         centerInternalCircle = PointF(width/2.0f, height/2.0f)
     }
 

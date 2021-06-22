@@ -66,17 +66,19 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
+                android:outlineAmbientShadowColor="#696969"
                 tools:ignore="MissingConstraints" />
 
             <com.example.ex32.view.JoystickView
                 android:id="@+id/joystick"
-                android:layout_width="393dp"
-                android:layout_height="379dp"
+                android:layout_width="411dp"
+                android:layout_height="389dp"
+                app:layout_constraintBottom_toTopOf="@+id/rudderBar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="235dp" />
+                app:layout_constraintTop_toBottomOf="@+id/appTitle"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
