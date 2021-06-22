@@ -2,7 +2,7 @@
 ## Flight Gear Remote Control Application
 
 
-Remote control application to control Flight Gear aircrafts.
+Remote control application to control Flight Gear aircrafts. <br/>
 ![ex3 home screen](https://user-images.githubusercontent.com/58383829/122922810-b023d880-d36c-11eb-94c5-d5e446eab80d.jpg)
 ![ex3 manual screen](https://user-images.githubusercontent.com/58383829/122922848-b914aa00-d36c-11eb-9b77-4988f0ac8fb6.jpg)
 
@@ -15,7 +15,6 @@ ______________
 4. You can change to any available port on your computer.
 5. If you wish to start flying _mid-air_ insert the following: **_fgfs --altitude=5000 --heading=0 --vc=110_**
 
-![ex3 flight gear settings](https://user-images.githubusercontent.com/58383829/122922888-c29e1200-d36c-11eb-9ff6-63fc24464891.jpg)
 ![ex3 flight gear settings mid air](https://user-images.githubusercontent.com/58383829/122922897-c6319900-d36c-11eb-83aa-20fa17414392.jpg)
 
 ______________
@@ -32,7 +31,7 @@ ______________
 
 If you want to change IP address and port number go back by pressing *_Back_* button, click on *_SETTINGS_* button
 and you will see the IP and port that you already inserted. change them if you wish. <br/>
-Note: if the connection was succesfull you will get the following message ![ex3 connected message 2](https://user-images.githubusercontent.com/58383829/122923106-fc6f1880-d36c-11eb-8400-eaff18bb6d67.jpg)
+Note: if the connection was succesfull you will get the following message <br/> ![ex3 connected message 2](https://user-images.githubusercontent.com/58383829/122923106-fc6f1880-d36c-11eb-8400-eaff18bb6d67.jpg)
 
 
 ______________
