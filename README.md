@@ -11,9 +11,11 @@ ______________
 #### Settings
 1. open Flight Gear simulator.
 2. Enter _Settings_.
-3. Insert the following: **_--telnet=socket,in,10,127.0.0.1,6400,tcp_**
-4. You can change to any available port on your computer.
-5. If you wish to start flying _mid-air_ insert the following: **_fgfs --altitude=5000 --heading=0 --vc=110_**
+3. Insert the following: 
+* **_--telnet=socket,in,10,127.0.0.1,6400,tcp_**
+* **_--timeofday=morning_**
+5. You can change to any available port on your computer.
+6. If you wish to start flying _mid-air_ insert the following: **_fgfs --altitude=5000 --heading=0 --vc=110_**
 
 ![ex3 flight gear settings mid air](https://user-images.githubusercontent.com/58383829/122922897-c6319900-d36c-11eb-83aa-20fa17414392.jpg)
 
