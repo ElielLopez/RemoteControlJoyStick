@@ -16,7 +16,7 @@ ______________
 ______________
 #### Instructions
 1. Open Flight Gear Simulator
-2. Click on **(*Fly!*)** button to start the simulator
+2. Click on **_Fly!_** button to start the simulator
 3. AutoStart the aircraft
 4. If you execute step 4 on Setting section skip step 3.
 5. Open the project and run the application.
