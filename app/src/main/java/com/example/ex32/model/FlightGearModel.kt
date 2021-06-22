@@ -15,6 +15,8 @@ object FlightGearModel {
     private lateinit var out: PrintWriter
     var dispatchQueue: BlockingDeque<Runnable> = LinkedBlockingDeque<Runnable>()
 
+    // connecting to the simulator with the IP address and port which is already
+    // configured at the simulator settings.
     fun connect(ip: String, port: Int) {
         Thread(Runnable {
             val fgSocket = Socket(ip, port)
@@ -49,6 +51,8 @@ object FlightGearModel {
         sendCommand("aileron", aileron)
     }
 
+    // sending commands to the simulator with the relevant path and value.
+    // afterwards, cleaning the command.
     fun sendCommand(feature: String,value: Float){
         var command = ""
 

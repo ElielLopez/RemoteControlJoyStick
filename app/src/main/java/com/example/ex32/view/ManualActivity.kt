@@ -8,7 +8,10 @@ import androidx.lifecycle.ViewModelProviders
 import com.example.ex32.R
 import com.example.ex32.vm.FlightGearViewModel
 
-class JoystickActivity: AppCompatActivity() {
+// manual activity contain the features for the user to control the
+// aircraft. implementing seek bars of rudder and throttle and the Joystick component.
+// the joystick have its own view but will be drawn alongside the seek bars.
+class ManualActivity: AppCompatActivity() {
 
     private lateinit var viewModel: FlightGearViewModel
 
@@ -56,6 +59,7 @@ class JoystickActivity: AppCompatActivity() {
             }
         })
 
+        // calling onChange method with 2 float numbers: aileron and elevator
         val joystick: JoystickView = findViewById(R.id.joystick)
         joystick.onChange = {a : Float, e : Float ->
             viewModel.setAileron(a)

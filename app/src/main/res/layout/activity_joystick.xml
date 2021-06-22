@@ -50,7 +50,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="parent"
-                tools:ignore="MissingConstraints"/>
+                tools:ignore="MissingConstraints" />
 
             <SeekBar
                 android:id="@+id/throttleBar"
@@ -60,12 +60,12 @@
                 android:layout_marginBottom="270dp"
                 android:max="100"
                 android:min="0"
-                android:rotation="270"
                 android:padding="20dp"
+                android:rotation="270"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <com.example.ex32.view.JoystickView
@@ -76,7 +76,7 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="160dp" />
+                tools:layout_editor_absoluteY="235dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

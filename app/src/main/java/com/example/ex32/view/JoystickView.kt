@@ -56,7 +56,7 @@ class JoystickView @JvmOverloads constructor(
         when(event?.action){
             MotionEvent.ACTION_MOVE -> touchMove(event.x, event.y)
             MotionEvent.ACTION_UP -> touchUp(event.x, event.y)//TODO()
-            MotionEvent.ACTION_DOWN -> touchDown(event.x, event.y) //TODO()
+            //MotionEvent.ACTION_DOWN -> touchDown(event.x, event.y) //TODO()
         }
         return true
     }
@@ -69,10 +69,11 @@ class JoystickView @JvmOverloads constructor(
         if(distance < radiusExternalCircle) {
             centerInternalCircle.x = x
             centerInternalCircle.y = y
-        } else if(radiusExternalCircle < distance) {
-            // TODO check this line
-            invalidate()
         }
+//        else if(radiusExternalCircle < distance) {
+//            // TODO check this line
+//            invalidate()
+//        }
         aileron = (x - centerExternalCircle.x) / radiusExternalCircle
         elevator = (y - centerExternalCircle.y) / radiusExternalCircle
 
@@ -90,11 +91,11 @@ class JoystickView @JvmOverloads constructor(
         centerInternalCircle.y = centerExternalCircle.y
         invalidate()
     }
-    private fun touchDown(x: Float, y: Float) {
-        centerExternalCircle.x = centerInternalCircle.x
-        centerExternalCircle.y = centerInternalCircle.y
-        invalidate()
-    }
+//    private fun touchDown(x: Float, y: Float) {
+//        centerExternalCircle.x = centerInternalCircle.x
+//        centerExternalCircle.y = centerInternalCircle.y
+//        invalidate()
+//    }
 
     private fun calcDist(x: Float, y: Float) : Float {
         var dx = (x - centerExternalCircle.x)

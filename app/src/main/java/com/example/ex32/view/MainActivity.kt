@@ -1,12 +1,10 @@
 package com.example.ex32.view
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
@@ -42,6 +40,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             viewModel.connectFG()
+
+            // after inserting the IP and the port the views will disappear
+            // until the user press on settings button which will make the views visible again.
             IPTextView = findViewById(R.id.IpText)
             IPTextView?.visibility = View.INVISIBLE
             portTextView = findViewById(R.id.PortText)
@@ -49,15 +50,19 @@ class MainActivity : AppCompatActivity() {
             connectButtonView = findViewById(R.id.connectButton)
             connectButtonView?.visibility = View.INVISIBLE
 
+            // calling to the new activity of Manual activity which contains
+            // the seek bars of rudder and throttle
+            // and the joystick component (aileron and elevator)
             openJoystickActivity()
         }
     }
 
     fun openJoystickActivity(){
-        var intent = Intent(this, JoystickActivity::class.java)
+        var intent = Intent(this, ManualActivity::class.java)
         startActivity(intent)
     }
 
+    // changing visibility of the ip and port views.
     fun showSettings(view: View){
         IPTextView = findViewById(R.id.IpText)
         IPTextView?.visibility = View.VISIBLE

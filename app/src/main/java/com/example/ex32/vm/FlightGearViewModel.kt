@@ -20,9 +20,9 @@ class FlightGearViewModel: ViewModel(), Observable {
     override fun removeOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {}
 
     // Making this function returning a Boolean value, helps to determine if
-    // the connections was successful and a message with the status will be shown
+    // the connections was successful and a message with the status will be shown.
     fun connectFG(): Boolean{
-        //TODO try and catch and check for valid values
+        // checking is the values are not null.
         if(ipAddress.value != null && portNumber.value != null){
             FlightGearModel.connect(ipAddress.value.toString(), (portNumber.value.toString()).toInt())
             return true
@@ -30,6 +30,7 @@ class FlightGearViewModel: ViewModel(), Observable {
         return false
     }
 
+    // sending values to relevant method of the model.
     fun setRudder(rudder: Float){
         FlightGearModel.rudderChanged(rudder)
     }
