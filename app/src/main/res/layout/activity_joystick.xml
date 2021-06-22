@@ -68,6 +68,27 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 tools:ignore="MissingConstraints" />
 
+<!--            <view class="com.example.ex32.view.JoystickActivity$JoystickTestActivity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                />-->
+
+<!--            <view class="com.example.ex32.view.JoystickActivity$JoystickTestActivity"-->
+<!--                android:id="@+id/joystick"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:layout_editor_absoluteX="0dp"-->
+<!--                tools:layout_editor_absoluteY="-44dp" />-->
+            <com.example.ex32.view.JoystickView
+                android:id="@+id/joystick"
+                android:layout_width="326dp"
+                android:layout_height="324dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.639"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="182dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </layout>
