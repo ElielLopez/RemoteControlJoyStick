@@ -4,7 +4,7 @@
 
 Remote control application to control Flight Gear aircrafts.
 
---------------
+______________
 #### Settings
 1. open Flight Gear simulator
 2. Enter 'Settings'
