@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ex32</string>
+    <string name="app_name">FlightGear</string>
     <string name="Title">Remote Control Joystick</string>
     <string name="connectButtonText">Connect</string>
     <string name="connect_button">Connect</string>
