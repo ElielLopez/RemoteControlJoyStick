@@ -24,9 +24,9 @@ Remote control application to control Flight Gear aircrafts.
 
 #### How to use 
 
----------
+=========
 #### Architecture
 The project implementing MVVM architecture.
 
---------
+=========
 #### UML Diagram
