@@ -17,7 +17,7 @@ ______________
 5. You can change to any available port on your computer.
 6. If you wish to start flying _mid-air_ insert the following: **_fgfs --altitude=5000 --heading=0 --vc=110_**
 
-![ex3 flight gear settings mid air](https://user-images.githubusercontent.com/58383829/122922897-c6319900-d36c-11eb-83aa-20fa17414392.jpg)
+![ex3 flight gear settings mid air and day time](https://user-images.githubusercontent.com/58383829/122949694-8a0a3280-d384-11eb-9228-b9469e025abb.jpg)
 
 ______________
 #### Instructions
