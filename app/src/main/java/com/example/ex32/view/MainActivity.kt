@@ -51,12 +51,6 @@ class MainActivity : AppCompatActivity() {
 
             openJoystickActivity()
         }
-
-//        val joystick: JoystickView = findViewById(R.id.joystick)
-//        joystick.onChange = {a : Float, e : Float ->
-//            viewModel.setAileron(a)
-//            viewModel.setElevator(e)
-//        }
     }
 
     fun openJoystickActivity(){

@@ -34,7 +34,7 @@ class JoystickView @JvmOverloads constructor(
     }
     private val internalCircle = Paint().apply {
         style = Paint.Style.FILL_AND_STROKE //.STROKE
-        color = Color.WHITE // Color.parseColor('#FFC107')
+        color = Color.TRANSPARENT // Color.parseColor('#FFC107')
         isAntiAlias = true
     }
 

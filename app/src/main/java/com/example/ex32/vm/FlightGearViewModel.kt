@@ -12,7 +12,6 @@ class FlightGearViewModel: ViewModel(), Observable {
 
     val _ipAddress = MutableLiveData<String>()
     val _portNumber = MutableLiveData<String>()
-    //var statusText: String? = null
 
     val ipAddress: LiveData<String> = _ipAddress
     val portNumber: LiveData<String> = _portNumber
@@ -32,12 +31,10 @@ class FlightGearViewModel: ViewModel(), Observable {
     }
 
     fun setRudder(rudder: Float){
-//        println("VM rudder is: $rudder")
         FlightGearModel.rudderChanged(rudder)
     }
 
     fun setThrottle(throttle: Float){
-//        println("VM throttle is: $throttle")
         FlightGearModel.throttleChanged(throttle)
     }
 
@@ -52,8 +49,4 @@ class FlightGearViewModel: ViewModel(), Observable {
     fun disconnectFG() {
         FlightGearModel.disconnect()
     }
-
-//    fun showConnectionMessage(status: String){
-//        statusText = status
-//    }
 }
