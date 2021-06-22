@@ -4,11 +4,13 @@
 
 Remote control application to control Flight Gear aircrafts.
 
+
 ______________
 #### Settings
 1. open Flight Gear simulator
 2. Enter 'Settings'
 3. insert the following: '--telnet=socket,in,10,127.0.0.1,6400,tcp'
+
 
 ______________
 #### Instructions
@@ -21,15 +23,15 @@ ______________
 7. Click Connect
 8. Fly!
 
-______________
 
+______________
 #### How to use 
 
-______________
 
+______________
 #### Architecture
 The project implementing MVVM architecture.
 
---------------
 
+--------------
 #### UML Diagram
