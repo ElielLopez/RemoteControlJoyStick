@@ -57,3 +57,5 @@ View: MainActivity, ManualActivity and JoystickView. <br/>
 
 --------------
 #### UML Diagram
+![umlExp2](https://user-images.githubusercontent.com/58383829/123119456-3bc06680-d44c-11eb-904e-ab9f10f13a1d.jpg)
+
