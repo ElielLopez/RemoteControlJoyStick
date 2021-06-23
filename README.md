@@ -56,7 +56,7 @@ Model: FlightGearModel. <br/>
 View-Model: FlightGearViewModel. <br/>
 View: MainActivity, ManualActivity and JoystickView. <br/>
 
-![MVVM1 0Black](https://user-images.githubusercontent.com/58383829/123124908-be4b2500-d450-11eb-83f1-c0bdec081cf0.png)
+![MVVM2 0White](https://user-images.githubusercontent.com/58383829/123124988-cefb9b00-d450-11eb-8e35-8d96ad8c398b.jpg)
 
 
 --------------
