@@ -33,6 +33,7 @@ ______________
 
 If you want to change IP address and port number go back by pressing *_Back_* button, click on *_SETTINGS_* button
 and you will see the IP and port that you already inserted. change them if you wish. <br/>
+________________________
 Note: if the connection was succesfull you will get the following message <br/> ![ex3 connected message 2](https://user-images.githubusercontent.com/58383829/122923106-fc6f1880-d36c-11eb-8400-eaff18bb6d67.jpg)
 
 
